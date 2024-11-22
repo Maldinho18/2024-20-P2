@@ -4,7 +4,6 @@ import { TrainerListComponent } from './trainer/trainer-list/trainer-list.compon
 import { TrainerDetailComponent } from './trainer/trainer-detail/trainer-detail.component';
 
 const routes: Routes = [
-  { path: '', component: TrainerListComponent },
   { path: 'trainers', loadChildren: () => import('./trainer/trainer.module').then(m => m.TrainerModule) },
 ];
 

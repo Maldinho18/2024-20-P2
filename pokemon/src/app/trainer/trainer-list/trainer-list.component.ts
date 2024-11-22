@@ -18,6 +18,7 @@ export class TrainerListComponent implements OnInit {
     this.trainerService.getTrainers().subscribe((trainers) => {
       this.trainers = trainers;
     });
+    console.log(this.trainers);
   }
 
   getTraunersList(): Array<Trainer> {
